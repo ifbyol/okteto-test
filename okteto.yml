@@ -5,4 +5,5 @@ deploy:
   commands:
     # - curl https://get.okteto.com -sSfL | OKTETO_VERSION=2.31.0 sh
     - okteto destroy --log-level debug --file backend/test_domain/okteto.yml
+    - sleep 60
     - okteto deploy --log-level debug --file backend/test_domain/okteto.yml 
